@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+  font-size: 25px; 
+  line-height: 1.8; 
+  font-family: 'Playfair Display', serif;
+  background-image: url('https://imgs.search.brave.com/5Mj_zLxPwriZfJ735zZG_5lwU6EoMdJptKj5XDBL2zA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM5/NDc5NDg0Ni9waG90/by9jb2ZmZWUtc2hv/cC1pbnRlcmlvci1z/dG9jay1waG90by5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/TzdjZmlUaUZlVU9U/NVFwOU9vckdheDBM/bXVyRjBnRGt2eHdJ/M3lDcldmWT0'); /* Background for all pages */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+/* Centering containers */
+.login-container, .order-container {
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  color: aqua;
+}
+
+/* Titles */
+h1, h2 {
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Form Input Fields */
+input[type="text"], input[type="password"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Buttons */
+.button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #d2691e;
+  color: white;
+  padding: 12px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Button Hover Effects */
+.button:hover {
+  background-color: #ff9900;
+  transform: scale(1.05);
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Order Page Layout */
+.menu-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 5px;
+  margin: 5px 0;
+  color: black;
+}
+
+/* Input Field for Order */
+.menu-item input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+}
+
+/* Total Price */
+.total-container {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Animation for Login and Order Page */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container, .order-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Style input fields properly */
+input, select {
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  border: none; /* Remove border */
+  border-bottom: 2px solid #d2691e; /* Stylish bottom border */
+  color: rgb(236, 18, 145); /* Text color */
+  padding: 10px;
+  font-size: 16px;
+  outline: none; /* Remove default white outline */
+  width: 100%;
+}
+
+/* When input is focused */
+input:focus, select:focus {
+  border-bottom: 2px solid #ff9800; /* Highlight border when selected */
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Style for better visibility */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Light placeholder */
+}
+
+/* Fix button appearance */
+button {
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff9800;
+}
+
+/* To ensure input fields blend with the background */
+body {
+  background-size: cover;
+  background-attachment: fixed; /* Prevents movement */
+}
+
+/* Back Button Styling */
+.back-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #8B4513; /* A warm coffee-like brown */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #A0522D; /* A lighter coffee shade */
+}
+
+/* Positioning the top-right buttons */
+.top-right-buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Styling the top-right buttons */
+.top-right-buttons .button {
+  background-color: #d2691e;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.top-right-buttons .button:hover {
+  background-color: #ff9900;
+  transform: scale(1.05);
+}
+
+/* Horizontal line for separation */
+hr {
+  margin-top: 50px;
+  border: 1px solid #ddd;
+}
+
+/* Label Styling */
+label {
+  color: #FF5733; /* Vibrant orange for better visibility */
+  font-weight: bold;
+}
